@@ -10,7 +10,7 @@ by adding `gpx_parser` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:gpx_parser, "~> 0.1.0"}
+    {:gpx_parser, github: "mattsan/gpx_parser_for_elixir"}
   ]
 end
 ```
