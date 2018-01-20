@@ -7,7 +7,8 @@ defmodule GpxParser.Mixfile do
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      escript: escript()
     ]
   end
 
@@ -23,5 +24,9 @@ defmodule GpxParser.Mixfile do
     [
       {:sweet_xml, "~> 0.6.5"}
     ]
+  end
+
+  defp escript do
+    [main_module: GpxParser.CLI]
   end
 end
